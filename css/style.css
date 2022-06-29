@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Cinzel&family=Roboto:wght@100&display=swap');
+:root{
+    --rojoBrillante: rgb(242, 95, 58);
+    --azulOscuro: rgb(35, 44, 81);
+    --azulGrisáceoOscuro: rgb(143, 148, 167);
+    --azulMuyOscuro: rgb(29, 30, 37);
+    --rojoMuyPálido: rgb(255, 239, 234);
+    --varianteGrisClaro: rgb(249, 249, 249);
+
+}
+html{
+    width: 1200px;
+
+}
+
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Roboto', sans-serif;
+    color: var(--azulOscuro);
+    /* margin-left: 30px; */
+   
+}
+
+nav{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    left: 30px;
+    top: 30px;
+    font-size: 15px;
+    width: 100%;
+
+}
+.navBar{
+    display: flex;
+    position: relative;
+    margin-left: 120px;
+}
+
+nav a{
+   margin-left: 50px;
+   text-decoration: none;
+    
+}
+nav img {
+    height: 20px;
+}
+button, span{
+    display: flex;
+    position: relative;
+    background-color: var(--rojoBrillante);
+    color: #ffffff;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    
+    
+}
+nav button{
+    left: 160px;
+    top: -10 px;
+}
+h1{
+    position: relative;
+    height: 200px;
+    width: 440px;
+    font-size: 60px;
+    top: 70px;
+    
+
+}
+main{
+    position: relative;
+    left: 20px;
+    font-size: 18px;
+
+}
+main p {
+    position: relative;
+    width: 400px;
+    top: 50px;
+}
+main button {
+    top: 50px;
+
+}
+.grafica{
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    width: 600px;
+    
+
+}
+.panchito1 {
+    position: absolute;
+    z-index: -1;
+    /* left: 65vw;
+    top: -20vh; */
+    top: -120px;
+    right: -120px;
+}
+section {
+    position: relative;
+    left: 30px;
+    top:150px;
+    width: 400px;
+    
+}
+h2 {
+    position: relative;
+    top: 100px;
+    font-size: 40px;
+    
+
+}
+section p {
+    position: relative;
+    top: 100px;
+    width: 350px;
+    
+    
+}
+article {
+    position: absolute;
+    /* display: flex; */
+    top: 700px;
+    right: 100px;
+    width: 400px;
+    box-sizing: border-box;
+
+}
+article h5{
+    position: relative;
+    /* justify-content: flex-start; */
+    
+}
+/* arreglar numeros para que queden alineados con el h5 */
+article h5{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+article span{
+    position: absolute;
+    display: flex;
+    /* flex-direction: row; */
+    width: 30px;
+    font-size: 15px;
+    /* right: 410px; */
+    right: 410px;
+
+    
+}
+.article2 {
+    position: relative;
+    display: flex;
+    top: 400px;
+    width: 1200px;
+    /* height: 90px; */
+    flex-direction: row;
+    
+    
+
+}
+.article2 h3 {
+    position: relative;
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    left: 600px;
+    width: 1400px;
+    top: -50px;
+    
+    
+}
+.article2 p {
+    font-size: 16px;
+}
+.article2 img {
+position: relative;
+width: 70px;
+height: 70px;    
+}
+.botonCentrado{
+    position: relative;
+    display: flex;
+    left: 515px;
+    top: 600px;
+    width: 100px;
+
+}
+.boxCards{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 200px;
+    
+}
+.boxAli, .boxAnisha, 
+.boxRichard {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #fafafa;
+    height: 220px;
+    width: 350px;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.boxAnisha {
+    position: relative;
+    right: 150px;
+
+}
+.boxRichard{
+    position: relative;
+    /* right: -100px; */ 
+}
+.boxAli{
+    position: relative;
+    right: 100px;
+
+}
+.panchito2 {
+    position: absolute;
+    z-index: -1;
+    right: 150px;
+    top: 300px;
+}
+.panchito3 {
+    position: relative;
+    display: flex;
+    right: 150px;
+    top: 600px;
+    opacity: 0.1;
+    z-index: 1;
+}
+.panchito4 {
+    position: absolute;
+    display: flex;
+    left: 1100px;
+    top: 900px;
+    opacity: 0.1;
+    z-index: 0.1;
+}
+aside{
+    background-color: var(--rojoBrillante);
+    position: absolute;
+    display: flex;
+    width: 1500px;
+    height: 200px;
+    top: 1600px;
+    margin-left: -8px;
+    align-items: center;
+}
+aside h3 {
+    display: flex;
+    position: relative;
+    font-size: 40px;
+    color: #ffffff;
+    width: 440px;
+    line-height: 48px;
+    font-weight: 700px;
+    left: 50px;
+  
+}
+aside button {
+    position: relative;
+    left: 700px;
+    width: 100px;
+    font-size: 11px;
+    background-color: #ffffff;
+    color: var(--rojoBrillante);
+}
+
+footer {
+    background-color: var(--azulMuyOscuro);
+    position: absolute;
+    width: 1500px;
+    height: 250px;
+    top: 1800px;
+    margin-left: -8px;
+    bottom: 1px;
+    z-index: 2;
+
+    
+}
+footer img {
+    position: relative;
+    left: 10%;
+    top: 70px;
+    bottom: 9%;
+    width: 120px;
+}
+.boxRedes{
+    position: relative;
+    display: flex;
+    font-style: normal;
+    
+    top: 130px;
+    left: 10%;
+    justify-content: space-between;
+    width: 100px;
+    gap: 10px;
+    background: #ffffff;
+}
+footer a {
+    color: azure;
+    text-decoration: none;
+
+
+}
+.primeraColumna, .segundaColumna {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    gap: 12px;    
+
+}
+.primeraColumna {
+    position: relative;
+    left: 25%;
+    /* width: -150px; */
+    height: 130px;
+
+}
+.segundaColumna{
+    position: relative;
+    left: 35%;
+    bottom: 120px;
+}
+form {
+    position: relative;
+    right: 510px;
+
+}
+footer p {
+    position: relative;
+    display: flex;
+}
+form{
+    position: absolute;
+    display: flex;
+    bottom: 150px;
+
+}
+footer input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* width: 65px; */
+    /* height: 45px; */
+    padding: 10px;
+    gap: 10px;
+    border-radius: 50px;
+}
+footer button {
+    font-size: 13px;
+    width: 63px;
+
+}
