@@ -8,18 +8,23 @@
     --varianteGrisClaro: rgb(249, 249, 249);
 
 }
-html{
-    width: 1200px;
-
-}
-
 *{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-family: 'Cinzel', serif;
     font-family: 'Roboto', sans-serif;
     color: var(--azulOscuro);
-    /* margin-left: 30px; */
-   
+    padding: 0;
+    margin: 0;
+
+  
+
+}
+body {
+    background-image: url(/img/bg-tablet-pattern.svg);
+    background-position-x: 140%;
+    background-position-y: 500%; 
+    background-repeat: no-repeat;
+    
 }
 
 nav{
@@ -36,12 +41,13 @@ nav{
     display: flex;
     position: relative;
     margin-left: 120px;
+    padding: 8px 16px;
 }
-
 nav a{
    margin-left: 50px;
    text-decoration: none;
-    
+   cursor: pointer;
+
 }
 nav img {
     height: 20px;
@@ -58,12 +64,20 @@ button, span{
     font-style: normal;
     font-weight: bold;
     font-size: 10px;
-    
-    
+    border: none;
+
+
+}
+label{
+    opacity: 0;
 }
 nav button{
     left: 160px;
     top: -10 px;
+}
+.navBar :hover{
+    background-color: var(--rojoMuyPálido);
+    transition: ease-in .2s;
 }
 h1{
     position: relative;
@@ -71,64 +85,51 @@ h1{
     width: 440px;
     font-size: 60px;
     top: 70px;
-    
-
 }
 main{
     position: relative;
     left: 20px;
     font-size: 18px;
-
 }
 main p {
     position: relative;
     width: 400px;
-    top: 50px;
+    top: 90px;
 }
 main button {
-    top: 50px;
-
+    top: 110px;
 }
 .grafica{
     position: absolute;
     right: 100px;
     top: 150px;
     width: 600px;
-    
-
-}
-.panchito1 {
-    position: absolute;
-    z-index: -1;
-    /* left: 65vw;
-    top: -20vh; */
-    top: -120px;
-    right: -120px;
 }
 section {
     position: relative;
     left: 30px;
     top:150px;
-    width: 400px;
+    width: 500px;
+    height: 200px;
     
+
 }
 h2 {
     position: relative;
     top: 100px;
     font-size: 40px;
-    
+
 
 }
 section p {
     position: relative;
     top: 100px;
     width: 350px;
-    
-    
+
+
 }
 article {
     position: absolute;
-    /* display: flex; */
     top: 700px;
     right: 100px;
     width: 400px;
@@ -137,60 +138,60 @@ article {
 }
 article h5{
     position: relative;
-    /* justify-content: flex-start; */
-    
 }
-/* arreglar numeros para que queden alineados con el h5 */
 article h5{
     flex-direction: row;
     justify-content: flex-start;
+    top: 15px;
 }
 article span{
     position: absolute;
     display: flex;
-    /* flex-direction: row; */
     width: 30px;
     font-size: 15px;
-    /* right: 410px; */
     right: 410px;
 
-    
+
+}
+article p {
+    position: relative;
+    top: 25px;
 }
 .article2 {
     position: relative;
     display: flex;
     top: 400px;
     width: 1200px;
-    /* height: 90px; */
     flex-direction: row;
-    
-    
-
+    right: 200px;
 }
 .article2 h3 {
     position: relative;
     display: flex;
     font-size: 40px;
     font-weight: bold;
-    left: 600px;
+    left: 640px;
     width: 1400px;
-    top: -50px;
-    
-    
+    top: 80px;
+    white-space: nowrap;
+
+
+
 }
 .article2 p {
     font-size: 16px;
+    
 }
 .article2 img {
-position: relative;
-width: 70px;
-height: 70px;    
+    position: relative;
+    width: 70px;
+    height: 70px;
 }
 .botonCentrado{
     position: relative;
     display: flex;
-    left: 515px;
-    top: 600px;
+    left: 550px;
+    top: 620px;
     width: 100px;
 
 }
@@ -200,13 +201,17 @@ height: 70px;
     flex-direction: row;
     justify-content: space-between;
     top: 200px;
-    
+    left: 50px;
+
+
 }
-.boxAli, .boxAnisha, 
+.boxCards img {
+    top: -10%;
+}
+.boxAli, .boxAnisha,
 .boxRichard {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     background-color: #fafafa;
     height: 220px;
     width: 350px;
@@ -220,7 +225,7 @@ height: 70px;
 }
 .boxRichard{
     position: relative;
-    /* right: -100px; */ 
+
 }
 .boxAli{
     position: relative;
@@ -232,14 +237,17 @@ height: 70px;
     z-index: -1;
     right: 150px;
     top: 300px;
+    width: 100%;
 }
 .panchito3 {
     position: relative;
     display: flex;
-    right: 150px;
+    left: 100px;
     top: 600px;
     opacity: 0.1;
     z-index: 1;
+    height: 400px;
+    width: 100%;
 }
 .panchito4 {
     position: absolute;
@@ -248,6 +256,8 @@ height: 70px;
     top: 900px;
     opacity: 0.1;
     z-index: 0.1;
+    width: 100%;
+    
 }
 aside{
     background-color: var(--rojoBrillante);
@@ -258,6 +268,11 @@ aside{
     top: 1600px;
     margin-left: -8px;
     align-items: center;
+    background-image: url(/img/bg-simplify-section-desktop.svg);
+    background-position-x: 220%;
+    background-position-y: 100%;
+    
+    
 }
 aside h3 {
     display: flex;
@@ -268,7 +283,7 @@ aside h3 {
     line-height: 48px;
     font-weight: 700px;
     left: 50px;
-  
+
 }
 aside button {
     position: relative;
@@ -277,6 +292,7 @@ aside button {
     font-size: 11px;
     background-color: #ffffff;
     color: var(--rojoBrillante);
+
 }
 
 footer {
@@ -288,8 +304,6 @@ footer {
     margin-left: -8px;
     bottom: 1px;
     z-index: 2;
-
-    
 }
 footer img {
     position: relative;
@@ -302,14 +316,17 @@ footer img {
     position: relative;
     display: flex;
     font-style: normal;
-    
+    opacity: 1;
     top: 130px;
     left: 10%;
     justify-content: space-between;
-    width: 100px;
-    gap: 10px;
-    background: #ffffff;
+    width: 20px;
+    gap: 15px;
+    padding: 10px;
+
+
 }
+
 footer a {
     color: azure;
     text-decoration: none;
@@ -321,21 +338,21 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: flex-start; */
-    gap: 12px;    
+     gap: 12px;
 
 }
 .primeraColumna {
     position: relative;
-    left: 25%;
-    /* width: -150px; */
+    left: 27%;
     height: 130px;
+    width: 15%;
 
 }
 .segundaColumna{
     position: relative;
-    left: 35%;
+    left: 600px;
     bottom: 120px;
+    width: 15%;
 }
 form {
     position: relative;
@@ -345,25 +362,178 @@ form {
 footer p {
     position: relative;
     display: flex;
+    justify-content: flex-end;
+    color: var(--varianteGrisClaro);
+    top: -100px;
+    right: 200px;
+    font-size: 13px;
+
 }
 form{
     position: absolute;
     display: flex;
     bottom: 150px;
+    right: 260px
 
 }
 footer input {
     position: relative;
     display: flex;
     justify-content: center;
-    /* width: 65px; */
-    /* height: 45px; */
     padding: 10px;
     gap: 10px;
     border-radius: 50px;
+    border: none;
 }
 footer button {
     font-size: 13px;
     width: 63px;
+    margin-left: 10px;
 
+}
+
+@media (max-width: 500px) {
+    body {
+        background-position-x: -50%;
+        background-position-y: -15vh;
+        background-size: 500px;
+        
+    }
+    label {
+        opacity: 1;
+    }
+    
+    .navBar{
+        opacity: 0;
+    }
+    body label {
+        position: relative;
+        display: flex;
+        left: 85%;
+        top: -1.2vh;
+        flex-direction: row;
+    }
+    nav .logo {
+        position: absolute;
+        display: flex;
+        
+    }
+    .grafica{
+        width: 100%;
+        left: -1%;
+        top: 10%;
+        
+    }
+    h1, p {
+        position: relative;
+        display: flex;
+        top: 45vh;
+        width: 80vw;
+        text-align: center;
+        left: 5px;
+    }
+    h1 {
+        font-size: 40px;
+        
+    }
+    main p{
+        font-size: 15px;
+        top: 40vh;
+        width: 80%;;
+    }
+    main button {
+        flex-direction: row;
+        display: flex;
+        position: absolute;
+        width: 25vw;
+        top: 280%;
+        left: 30%;
+    }
+    section {
+        position: relative;
+        display: flex;
+        top: 50vh;
+        width: 160%;
+        left: 11vw;
+    }
+    section p{ 
+        position: relative;
+        left: -85vw;
+        top: 25vh;
+        width: 490px;
+        background-image: url(/img/bg-simplify-section-mobile.svg);
+    
+    }
+    article{
+        position: absolute;
+        left: 18vw;
+        top: 122vh;
+    }
+    article p { 
+        left: -2vw;
+    }
+    .article2{
+        position: relative;
+        top: 58rem;
+        right: 42%;
+    }
+    .article2 h3 {
+        left: 55vw;
+    }
+    .boxAnisha p {
+        top: 1vh;
+    }
+    .botonCentrado{
+        left: 38%;
+        top: 140vh;
+    }
+    footer, aside {
+        position: relative;
+        top: 150vh;
+    }
+    aside {
+        height: 40vh;
+    }
+    aside h3 {
+        display: flex;
+        width: 22%;
+        text-align: center;
+        top: -20%;
+    }
+    aside button {
+        left: -11%;
+        top: 20%;
+    }
+    footer {
+        height: 50vh;
+    }
+    footer form {
+        position: relative;
+        left: 6%;
+        top: -22vh;
+    }
+    footer img {
+        position: relative;
+        top: 80%;
+
+    }
+    .columnasFooter {
+        position: relative;
+        right: 22%;
+        top: 18% ;
+    }
+    
+       footer  p {
+    position: relative;
+    display: flex;
+    top: 18%;
+    left: -1%;
+    }
+    .boxRedes {
+        display: flex;
+        top: 63%;
+        justify-content: space-between;
+        width: 20%;
+        left: 4%;
+    }
 }
