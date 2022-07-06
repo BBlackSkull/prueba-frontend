@@ -30,7 +30,7 @@ body {
 nav{
     display: flex;
     position: relative;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     left: 30px;
     top: 30px;
     font-size: 15px;
@@ -40,7 +40,6 @@ nav{
 .navBar{
     display: flex;
     position: relative;
-    margin-left: 120px;
     padding: 8px 16px;
 }
 nav a{
@@ -68,6 +67,8 @@ button, span{
 
 
 }
+
+
 label{
     opacity: 0;
 }
@@ -109,10 +110,8 @@ section {
     position: relative;
     left: 30px;
     top:150px;
-    width: 500px;
+    width: 100%;
     height: 200px;
-    
-
 }
 h2 {
     position: relative;
@@ -161,7 +160,7 @@ article p {
     position: relative;
     display: flex;
     top: 400px;
-    width: 1200px;
+    width: 100%;
     flex-direction: row;
     right: 200px;
 }
@@ -171,7 +170,7 @@ article p {
     font-size: 40px;
     font-weight: bold;
     left: 640px;
-    width: 1400px;
+    width: 100%;
     top: 80px;
     white-space: nowrap;
 
@@ -205,6 +204,7 @@ article p {
 
 
 }
+
 .boxCards img {
     top: -10%;
 }
@@ -263,7 +263,7 @@ aside{
     background-color: var(--rojoBrillante);
     position: absolute;
     display: flex;
-    width: 1500px;
+    width: 100%;
     height: 200px;
     top: 1600px;
     margin-left: -8px;
@@ -298,7 +298,7 @@ aside button {
 footer {
     background-color: var(--azulMuyOscuro);
     position: absolute;
-    width: 1500px;
+    width: 100%;
     height: 250px;
     top: 1800px;
     margin-left: -8px;
@@ -397,6 +397,7 @@ footer button {
         background-position-x: -50%;
         background-position-y: -15vh;
         background-size: 500px;
+        width: 414px;
         
     }
     label {
@@ -405,11 +406,13 @@ footer button {
     
     .navBar{
         opacity: 0;
+        width: 100%;
+
     }
     body label {
         position: relative;
         display: flex;
-        left: 85%;
+        left: 80%;
         top: -1.2vh;
         flex-direction: row;
     }
@@ -482,6 +485,7 @@ footer button {
     }
     .boxAnisha p {
         top: 1vh;
+        
     }
     .botonCentrado{
         left: 38%;
@@ -493,28 +497,31 @@ footer button {
     }
     aside {
         height: 40vh;
+        margin: 0%;
     }
     aside h3 {
         display: flex;
-        width: 22%;
+        width: 75%;
         text-align: center;
         top: -20%;
     }
     aside button {
-        left: -11%;
+        left: -37%;
         top: 20%;
     }
     footer {
         height: 50vh;
+        margin: 0%;
     }
     footer form {
         position: relative;
-        left: 6%;
-        top: -22vh;
+        left: 20%;
+        top: -25vh;
     }
     footer img {
         position: relative;
-        top: 80%;
+        top: 84%;
+        left: 29%;
 
     }
     .columnasFooter {
@@ -522,18 +529,32 @@ footer button {
         right: 22%;
         top: 18% ;
     }
+    .segundaColumna {
+        left: 80%;
+        top: 1%;
+    }
     
-       footer  p {
+    footer  p {
     position: relative;
     display: flex;
     top: 18%;
-    left: -1%;
+    left: -10%;
     }
     .boxRedes {
         display: flex;
         top: 63%;
         justify-content: space-between;
         width: 20%;
-        left: 4%;
+        left: 25%;
+    }
+    .boxCards div {
+        display: none;
+    }
+    .boxCards div:first-child {
+        display: flex;
+    }
+    nav button {
+        opacity: 0;
+        left:-100%;
     }
 }
